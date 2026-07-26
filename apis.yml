@@ -1,8 +1,29 @@
 aid: damae-medical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/damae-medical.png
 name: Damae Medical
-description: 'Damae Medical is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Damae Medical is a Paris-based medical device company developing non-invasive
+  imaging technology for dermatology and skin cancer diagnostics. Its flagship deepLive
+  system is built on proprietary LC-OCT (Line-field Confocal Optical Coherence Tomography),
+  which pairs deep tissue penetration with cellular resolution to produce histology-like
+  vertical and confocal-like horizontal 3D views of the skin in vivo. deepLive received
+  CE Mark Class IIa certification in 2023 and FDA 510(k) clearance in March 2025, and
+  integrates quantitative analysis tools such as 3D surface segmentation, cellular
+  network visualization, melanin distribution mapping, and dermal fiber segmentation.
+  The company was surfaced as a portfolio company of Partech and added to the API
+  Evangelist network. It publishes no public developer API, OpenAPI, SDK, or developer
+  portal at this time; this profile captures its public identity and domain-security
+  posture.'
 url: https://raw.githubusercontent.com/api-evangelist/damae-medical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Medical Devices
+- Medical Imaging
+- Dermatology
+- Oncology
+- Skin Cancer
+- Optical Coherence Tomography
+- Diagnostics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +51,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/damae-medical-domain-security.yml
 - type: Website
   url: https://damae-medical.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/damae-medical
+- type: YouTube
+  url: https://www.youtube.com/channel/UCclomDBHzkohBqB6rV78utg
+- type: Careers
+  url: https://damaemedical.teamtailor.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
